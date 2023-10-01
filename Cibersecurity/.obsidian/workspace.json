@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "9455bf47d7c0792c",
+    "type": "split",
+    "children": [
+      {
+        "id": "90e625a0cdee8ab6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41ee7cecffb94e2f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "picoCTF/WEB/caas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ee91857abb1b6c19",
+    "type": "split",
+    "children": [
+      {
+        "id": "14a47789b211928f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3106c9350ae0d55d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "11fd6381c60dd00d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4dd75103d7f2a4e1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "c51b3a3e86870518",
+    "type": "split",
+    "children": [
+      {
+        "id": "11b5034fb7155423",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a064010d59466f5f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "picoCTF/WEB/caas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0ee2a36693e17b38",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "picoCTF/WEB/caas.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "95c1016e164eff88",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bd3eeddc871fdc58",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "picoCTF/WEB/caas.md"
+              }
+            }
+          },
+          {
+            "id": "9abb8ff971b897ff",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "41ee7cecffb94e2f",
+  "lastOpenFiles": [
+    "picoCTF/WEB/Some Assembly required 2.md",
+    "picoCTF/WEB/caas.md",
+    "picoCTF/WEB/Some Assembly Required 1.md",
+    "picoCTF/WEB/Local Authority.md",
+    "picoCTF/WEB/MORE COOKIES.md",
+    "picoCTF/WEB/Most cookies.md",
+    "picoCTF/WEB/Logon.md",
+    "picoCTF/WEB/login.md",
+    "picoCTF/WEB/It is my birthday.md",
+    "picoCTF/WEB/GET aHEAD.md",
+    "picoCTF/WEB/COOKIES (Pico CTF).md",
+    "picoCTF/WEB/We are the robots.md",
+    "picoCTF/WEB/Who are you.md",
+    "picoCTF/WEB/Super Serial.md",
+    "picoCTF/WEB/SOAP.md",
+    "Labs/PortswiggerLabs/SSRF/SSRF.md",
+    "Labs/PortswiggerLabs/External entity XML (XXE) Injection/External entity XML (XXE) Injection.md",
+    "Virtual Machines/Vuln Hub Machines/Djinn3/Djinn3.md",
+    "Labs/PortswiggerLabs/Directory traversal/Directory traversal (LFI).md",
+    "Labs/PortswiggerLabs/XSS/DOM XSS in document.write sink using source location.search.md",
+    "Virtual Machines/HTB/format.md",
+    "Virtual Machines/HTB/TwoMillion.md",
+    "Ayuda de memoria de comandos.md",
+    "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
+    "Virtual Machines/HTB/CozyHosting.md",
+    "Virtual Machines/Vuln Hub Machines/DevGuru/DevGuru 1.md",
+    "picoCTF/WEB/IMAGES/Screenshot_2023-09-23_11_11_36.png",
+    "picoCTF/WEB/IMAGES",
+    "picoCTF/WEB",
+    "picoCTF",
+    "PHDcourse/IMAGES/Screenshot_2023-09-22_22_24_30.png",
+    "PHDcourse/IMAGES/Screenshot_2023-09-22_21_50_58.png",
+    "PHDcourse/IMAGES",
+    "PHDcourse",
+    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-21_21_22_02.png",
+    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-21_21_21_55.png",
+    "Virtual Machines/HTB/IMAGES/Screenshot_2023-09-21_16_10_44.png",
+    "Virtual Machines/HTB/IMAGES/Screenshot_2023-09-21_11_38_56.png",
+    "Labs/PortswiggerLabs/Exploit upload/IMAGES/Screenshot_2023-09-21_09_25_22.png",
+    "Labs/PortswiggerLabs/Exploit upload/IMAGES",
+    "Labs/PortswiggerLabs/Exploit upload",
+    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_14_04_34.png",
+    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_10_38_18.png",
+    "Labs/HackerOne CTF/IMAGES",
+    "Labs/HackerOne CTF",
+    "Labs/PortswiggerLabs/Access Control/IMAGES",
+    "Untitled.canvas"
+  ]
+}

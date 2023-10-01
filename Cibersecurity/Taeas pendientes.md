@@ -1,0 +1,1 @@
+Chapter 13 Linux basics for hackers task number 4 (connect with a ssh to another device with my linux)
