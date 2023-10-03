@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/WEB/caas.md",
+                "file": "picoCTF/Reverse Engineering/Transformation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2be357fc7a90ea51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weak points.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/WEB/caas.md",
+                "file": "picoCTF/Reverse Engineering/Transformation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/WEB/caas.md",
+                "file": "picoCTF/Reverse Engineering/Transformation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "picoCTF/WEB/caas.md"
+                "file": "picoCTF/Reverse Engineering/Transformation.md"
               }
             }
           },
@@ -159,32 +171,37 @@
   },
   "active": "41ee7cecffb94e2f",
   "lastOpenFiles": [
-    "picoCTF/WEB/Some Assembly required 2.md",
-    "picoCTF/WEB/caas.md",
-    "picoCTF/WEB/Some Assembly Required 1.md",
+    "picoCTF/General skills/Nice netcat.md",
+    "picoCTF/Reverse Engineering/Transformation.md",
+    "picoCTF/Reverse Engineering",
+    "picoCTF/Forensics/Information.md",
+    "picoCTF/General skills",
+    "picoCTF/WEB/It is my birthday.md",
+    "picoCTF/Forensics",
     "picoCTF/WEB/Local Authority.md",
     "picoCTF/WEB/MORE COOKIES.md",
     "picoCTF/WEB/Most cookies.md",
+    "picoCTF/WEB/Scavenger hunt.md",
+    "picoCTF/WEB/We are the robots.md",
+    "picoCTF/WEB/Web Gauntlet 2.md",
+    "picoCTF/WEB/Some Assembly Required 3.md",
+    "Weak points.md",
+    "picoCTF/WEB/Some Assembly required 2.md",
+    "Virtual Machines/HTB/keeper.md",
+    "Virtual Machines/HTB/TOpology.md",
+    "Virtual Machines/HTB/CozyHosting.md",
+    "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
+    "PHDcourse/Bug bounty hunter course  Beginner to advanced.md",
+    "picoCTF/WEB/Super Serial.md",
     "picoCTF/WEB/Logon.md",
     "picoCTF/WEB/login.md",
-    "picoCTF/WEB/It is my birthday.md",
-    "picoCTF/WEB/GET aHEAD.md",
-    "picoCTF/WEB/COOKIES (Pico CTF).md",
-    "picoCTF/WEB/We are the robots.md",
-    "picoCTF/WEB/Who are you.md",
-    "picoCTF/WEB/Super Serial.md",
     "picoCTF/WEB/SOAP.md",
-    "Labs/PortswiggerLabs/SSRF/SSRF.md",
-    "Labs/PortswiggerLabs/External entity XML (XXE) Injection/External entity XML (XXE) Injection.md",
-    "Virtual Machines/Vuln Hub Machines/Djinn3/Djinn3.md",
-    "Labs/PortswiggerLabs/Directory traversal/Directory traversal (LFI).md",
-    "Labs/PortswiggerLabs/XSS/DOM XSS in document.write sink using source location.search.md",
-    "Virtual Machines/HTB/format.md",
-    "Virtual Machines/HTB/TwoMillion.md",
-    "Ayuda de memoria de comandos.md",
-    "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
-    "Virtual Machines/HTB/CozyHosting.md",
-    "Virtual Machines/Vuln Hub Machines/DevGuru/DevGuru 1.md",
+    "2023-10-01.md",
+    "2023-09-26.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Untitled.md",
+    "picoCTF/WEB/caas.md",
     "picoCTF/WEB/IMAGES/Screenshot_2023-09-23_11_11_36.png",
     "picoCTF/WEB/IMAGES",
     "picoCTF/WEB",
@@ -201,10 +218,6 @@
     "Labs/PortswiggerLabs/Exploit upload/IMAGES",
     "Labs/PortswiggerLabs/Exploit upload",
     "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_14_04_34.png",
-    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_10_38_18.png",
-    "Labs/HackerOne CTF/IMAGES",
-    "Labs/HackerOne CTF",
-    "Labs/PortswiggerLabs/Access Control/IMAGES",
-    "Untitled.canvas"
+    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_10_38_18.png"
   ]
 }

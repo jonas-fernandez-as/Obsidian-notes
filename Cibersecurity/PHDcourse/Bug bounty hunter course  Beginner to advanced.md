@@ -654,19 +654,25 @@ npm start
 
 -Log as other person
 -Write other persons blog or posts
--etc (most comon bugs that we encounter)
+-Become admin
+-Check the log out functionality
+-By pass logins
+-etc
+(most common bugs that we will find)
 
 Creating two accounts and test your account
 
--Number of cookies
+-Number of cookies (A good tool to analyze it is Cyberchef [Magic option] )
 
 Changing passwords:
 www.example.com/changepassword=username+password=password
 
-(here you can change the password from another account)
+(here you can change the password from another account selecting another username)
 
 #### Exercises
 POSTBOOK hacker 101
+
+Juice
 
 
 
