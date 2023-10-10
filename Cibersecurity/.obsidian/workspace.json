@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/Cryptography/Easy Peasy.md",
+                "file": "Virtual Machines/HTB/Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "getca",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c51b3a3e86870518",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Cryptography/Easy Peasy.md",
+                "file": "Virtual Machines/HTB/Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Cryptography/Easy Peasy.md",
+                "file": "Virtual Machines/HTB/Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "picoCTF/Cryptography/Easy Peasy.md"
+                "file": "Virtual Machines/HTB/Analytics.md"
               }
             }
           },
@@ -171,14 +172,21 @@
   },
   "active": "41ee7cecffb94e2f",
   "lastOpenFiles": [
-    "Weak points.md",
+    "Virtual Machines/HTB/Unified.md",
+    "Virtual Machines/HTB/Untitled.md",
+    "Ayuda de memoria de comandos.md",
+    "Virtual Machines/HTB/format.md",
+    "Virtual Machines/HTB/Analytics.md",
+    "Web hacking/Local File inclusion (LFI).md",
+    "Virtual Machines/Vuln Hub Machines/Durian/DUrian.md",
+    "PHDcourse/Bug bounty hunter course  Beginner to advanced.md",
     "picoCTF/Cryptography/Easy Peasy.md",
+    "Weak points.md",
     "Labs/PortswiggerLabs/SQL INJECTION/SQL injection.md",
     "picoCTF/Forensics/tunn3l v1s10n.md",
     "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
     "picoCTF/Forensics/Matryoshka doll.md",
     "picoCTF/Forensics/Information.md",
-    "PHDcourse/Bug bounty hunter course  Beginner to advanced.md",
     "CURL.md",
     "picoCTF/Reverse Engineering/keygenme-py.md",
     "picoCTF/Reverse Engineering/Transformation.md",
@@ -195,13 +203,6 @@
     "picoCTF/Forensics",
     "picoCTF/WEB/Local Authority.md",
     "picoCTF/WEB/MORE COOKIES.md",
-    "picoCTF/WEB/Most cookies.md",
-    "picoCTF/WEB/Scavenger hunt.md",
-    "picoCTF/WEB/We are the robots.md",
-    "picoCTF/WEB/Web Gauntlet 2.md",
-    "picoCTF/WEB/Some Assembly Required 3.md",
-    "picoCTF/WEB/Some Assembly required 2.md",
-    "Virtual Machines/HTB/keeper.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "picoCTF/WEB/IMAGES/Screenshot_2023-09-23_11_11_36.png",
