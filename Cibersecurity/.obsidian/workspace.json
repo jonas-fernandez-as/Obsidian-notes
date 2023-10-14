@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtual Machines/HTB/Analytics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2be357fc7a90ea51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Labs/PortswiggerLabs/SQL INJECTION/SQL injection.md",
+                "file": "Virtual Machines/HTB/Jupiter.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "getca",
+                "query": "racecar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c51b3a3e86870518",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtual Machines/HTB/Analytics.md",
+                "file": "Virtual Machines/HTB/Jupiter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtual Machines/HTB/Analytics.md",
+                "file": "Virtual Machines/HTB/Jupiter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtual Machines/HTB/Analytics.md"
+                "file": "Virtual Machines/HTB/Jupiter.md"
               }
             }
           },
@@ -172,37 +159,37 @@
   },
   "active": "41ee7cecffb94e2f",
   "lastOpenFiles": [
+    "picoCTF/Reverse Engineering/shop.md",
+    "Labs/HTB challenges/RACECAR.md",
+    "picoCTF/Reverse Engineering/speeds and feeds.md",
+    "picoCTF/Forensics/Wireshark doo doo doo.md",
+    "picoCTF/Forensics/Glory of the garden.md",
+    "picoCTF/Forensics/Matryoshka doll.md",
+    "picoCTF/Reverse Engineering/ARMssembly 0.md",
+    "Virtual Machines/Vuln Hub Machines/DevGuru/DevGuru 1.md",
+    "Virtual Machines/HTB/Jupiter.md",
+    "Virtual Machines/HTB/CozyHosting.md",
+    "Virtual Machines/Vuln Hub Machines/Shuriken 1/Shuriken 1.md",
+    "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
+    "Virtual Machines/HTB/format.md",
     "Virtual Machines/HTB/Unified.md",
+    "Virtual Machines/Vuln Hub Machines/VENOM1/VENOM 1.md",
+    "TOOLS.md",
+    "Labs/PortswiggerLabs/SQL INJECTION/SQL injection.md",
+    "Virtual Machines/HTB/Analytics.md",
     "Virtual Machines/HTB/Untitled.md",
     "Ayuda de memoria de comandos.md",
-    "Virtual Machines/HTB/format.md",
-    "Virtual Machines/HTB/Analytics.md",
     "Web hacking/Local File inclusion (LFI).md",
     "Virtual Machines/Vuln Hub Machines/Durian/DUrian.md",
     "PHDcourse/Bug bounty hunter course  Beginner to advanced.md",
     "picoCTF/Cryptography/Easy Peasy.md",
     "Weak points.md",
-    "Labs/PortswiggerLabs/SQL INJECTION/SQL injection.md",
     "picoCTF/Forensics/tunn3l v1s10n.md",
-    "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
-    "picoCTF/Forensics/Matryoshka doll.md",
-    "picoCTF/Forensics/Information.md",
-    "CURL.md",
-    "picoCTF/Reverse Engineering/keygenme-py.md",
-    "picoCTF/Reverse Engineering/Transformation.md",
-    "picoCTF/General skills/Static ain't always noise.md",
-    "picoCTF/Cryptography/Mind your Ps and Qs.md",
-    "picoCTF/Binary Exploitation/Stonks.md",
     "picoCTF/Cryptography",
-    "Labs/HTB challenges/RACECAR.md",
     "picoCTF/Binary Exploitation",
-    "picoCTF/General skills/Nice netcat.md",
     "picoCTF/Reverse Engineering",
     "picoCTF/General skills",
-    "picoCTF/WEB/It is my birthday.md",
     "picoCTF/Forensics",
-    "picoCTF/WEB/Local Authority.md",
-    "picoCTF/WEB/MORE COOKIES.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "picoCTF/WEB/IMAGES/Screenshot_2023-09-23_11_11_36.png",

