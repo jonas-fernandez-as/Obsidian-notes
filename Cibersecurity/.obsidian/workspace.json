@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "41ee7cecffb94e2f",
+            "id": "336532606715b4f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtual Machines/HTB/Jupiter.md",
+                "file": "Virtual Machines/HTB/Appsanity - HTB - Hard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad938af4a3faded9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Virtual Machines/HTB/Codify.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "racecar",
+                "query": "perm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 280.5
   },
   "right": {
     "id": "c51b3a3e86870518",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtual Machines/HTB/Jupiter.md",
+                "file": "Virtual Machines/HTB/Codify.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtual Machines/HTB/Jupiter.md",
+                "file": "Virtual Machines/HTB/Codify.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtual Machines/HTB/Jupiter.md"
+                "file": "Virtual Machines/HTB/Codify.md"
               }
             }
           },
@@ -157,34 +170,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41ee7cecffb94e2f",
+  "active": "ad938af4a3faded9",
   "lastOpenFiles": [
-    "picoCTF/Reverse Engineering/shop.md",
-    "Labs/HTB challenges/RACECAR.md",
-    "picoCTF/Reverse Engineering/speeds and feeds.md",
-    "picoCTF/Forensics/Wireshark doo doo doo.md",
-    "picoCTF/Forensics/Glory of the garden.md",
-    "picoCTF/Forensics/Matryoshka doll.md",
-    "picoCTF/Reverse Engineering/ARMssembly 0.md",
-    "Virtual Machines/Vuln Hub Machines/DevGuru/DevGuru 1.md",
-    "Virtual Machines/HTB/Jupiter.md",
+    "Virtual Machines/HTB/Appsanity - HTB - Hard.md",
+    "Virtual Machines/HTB/Codify.md",
+    "Virtual Machines/HTB/Manager.md",
+    "Virtual Machines/Vuln Hub Machines/Djinn3/Djinn3.md",
     "Virtual Machines/HTB/CozyHosting.md",
-    "Virtual Machines/Vuln Hub Machines/Shuriken 1/Shuriken 1.md",
-    "Virtual Machines/Vuln Hub Machines/BuffEMR/BuffEMR.md",
-    "Virtual Machines/HTB/format.md",
-    "Virtual Machines/HTB/Unified.md",
-    "Virtual Machines/Vuln Hub Machines/VENOM1/VENOM 1.md",
-    "TOOLS.md",
-    "Labs/PortswiggerLabs/SQL INJECTION/SQL injection.md",
-    "Virtual Machines/HTB/Analytics.md",
-    "Virtual Machines/HTB/Untitled.md",
     "Ayuda de memoria de comandos.md",
-    "Web hacking/Local File inclusion (LFI).md",
-    "Virtual Machines/Vuln Hub Machines/Durian/DUrian.md",
+    "Virtual Machines/HTB/Analytics.md",
+    "Virtual Machines/Vuln Hub Machines/inferno&masashi/Inferno.md",
+    "Virtual Machines/HTB/Visual - HTB - Medium.md",
+    "Virtual Machines/HTB/Format.md",
+    "Virtual Machines/HTB/Keeper.md",
+    "Virtual Machines/HTB/Vaccine.md",
+    "Privilege-Scalation/Windows.md",
+    "Virtual Machines/HTB/Thetoopers.md",
+    "Screenshot_2023-10-28_13_57_08.png",
+    "Screenshot_2023-10-28_13_31_40.png",
+    "Screenshot_2023-10-28_13_04_45.png",
+    "Privilege-Scalation/Pasted image 20231027215624.png",
+    "Pasted image 20231027215701.png.md",
+    "Privilege-Scalation/Linux.md",
+    "Privilege-Scalation/Screenshot_2023-10-26_21_21_25.png",
+    "Privilege-Scalation/Screenshot_2023-10-27_09_58_27.png",
+    "Privilege-Scalation/Screenshot_2023-10-27_12_01_05.png",
+    "Priviledge-Scalation/IMAGES/Pasted image 20231027215701.png",
+    "Priviledge-Scalation/IMAGES",
+    "Priviledge-Scalation/IMAGES/Screenshot_2023-10-27_12_01_05.png",
+    "Screenshot_2023-10-27_12_01_05 1.png.md",
+    "Priviledge-Scalation/IMAGES/Screenshot_2023-10-27_09_58_27.png",
+    "Virtual Machines/HTB/Authority.md",
+    "Privilege-Scalation",
+    "Virtual Machines/HTB/Jupiter.md",
+    "Virtual Machines/HTB/Clicker.md",
     "PHDcourse/Bug bounty hunter course  Beginner to advanced.md",
-    "picoCTF/Cryptography/Easy Peasy.md",
-    "Weak points.md",
-    "picoCTF/Forensics/tunn3l v1s10n.md",
+    "Active directory.md",
+    "Hydra notes.md",
+    "Virtual Machines/Vuln Hub Machines/DevGuru/DevGuru 1.md",
+    "Virtual Machines/Vuln Hub Machines/oscp/oscp.md",
+    "picoCTF/Reverse Engineering/ARMssembly 1.md",
     "picoCTF/Cryptography",
     "picoCTF/Binary Exploitation",
     "picoCTF/Reverse Engineering",
@@ -192,20 +217,8 @@
     "picoCTF/Forensics",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "picoCTF/WEB/IMAGES/Screenshot_2023-09-23_11_11_36.png",
     "picoCTF/WEB/IMAGES",
     "picoCTF/WEB",
-    "picoCTF",
-    "PHDcourse/IMAGES/Screenshot_2023-09-22_22_24_30.png",
-    "PHDcourse/IMAGES/Screenshot_2023-09-22_21_50_58.png",
-    "PHDcourse/IMAGES",
-    "PHDcourse",
-    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-21_21_22_02.png",
-    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-21_21_21_55.png",
-    "Virtual Machines/HTB/IMAGES/Screenshot_2023-09-21_16_10_44.png",
-    "Virtual Machines/HTB/IMAGES/Screenshot_2023-09-21_11_38_56.png",
-    "Labs/PortswiggerLabs/Exploit upload/IMAGES/Screenshot_2023-09-21_09_25_22.png",
-    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_14_04_34.png",
-    "Labs/HackerOne CTF/IMAGES/Screenshot_2023-09-19_10_38_18.png"
+    "picoCTF"
   ]
 }

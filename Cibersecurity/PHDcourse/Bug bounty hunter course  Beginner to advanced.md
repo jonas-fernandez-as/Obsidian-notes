@@ -1107,3 +1107,34 @@ before checking for the redirect.
 
 #### Step 4: Test for Referer-Based Open Redirects ####
 
+
+
+## CLICKJACKING ##
+
+
+This vulnerability plays with the IFRAME of the html (plays with the z index and the transparency of the site )
+
+Headers that prevents it are:
+
+X-Frame-Options 
+Content-Security-Policy
+SameSite cookies.
+
+For more success there are this tools
+
+Social egineer tools
+https://github.com/trustedsec/social-engineer-toolkit/
+
+For a big success , the site must be convincing
+
+
+Some bypass :
+
+the double iframe trick.
+
+
+
+
+
+
+
