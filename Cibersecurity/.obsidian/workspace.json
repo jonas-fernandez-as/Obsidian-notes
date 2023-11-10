@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtual Machines/HTB/Appsanity - HTB - Hard.md",
+                "file": "Virtual Machines/HTB/Sandworm.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtual Machines/HTB/Codify.md",
+                "file": "Virtual Machines/HTB/Zipping.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "perm",
+                "query": "authorized_keys",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "right": {
     "id": "c51b3a3e86870518",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtual Machines/HTB/Codify.md",
+                "file": "Virtual Machines/HTB/Sandworm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtual Machines/HTB/Codify.md",
+                "file": "Virtual Machines/HTB/Sandworm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtual Machines/HTB/Codify.md"
+                "file": "Virtual Machines/HTB/Sandworm.md"
               }
             }
           },
@@ -170,9 +170,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad938af4a3faded9",
+  "active": "3106c9350ae0d55d",
   "lastOpenFiles": [
+    "Virtual Machines/HTB/Unified.md",
+    "Virtual Machines/HTB/Sandworm.md",
     "Virtual Machines/HTB/Appsanity - HTB - Hard.md",
+    "Virtual Machines/HTB/Zipping.md",
     "Virtual Machines/HTB/Codify.md",
     "Virtual Machines/HTB/Manager.md",
     "Virtual Machines/Vuln Hub Machines/Djinn3/Djinn3.md",
@@ -207,9 +210,6 @@
     "PHDcourse/Bug bounty hunter course  Beginner to advanced.md",
     "Active directory.md",
     "Hydra notes.md",
-    "Virtual Machines/Vuln Hub Machines/DevGuru/DevGuru 1.md",
-    "Virtual Machines/Vuln Hub Machines/oscp/oscp.md",
-    "picoCTF/Reverse Engineering/ARMssembly 1.md",
     "picoCTF/Cryptography",
     "picoCTF/Binary Exploitation",
     "picoCTF/Reverse Engineering",
